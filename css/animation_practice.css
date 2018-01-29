@@ -1,0 +1,103 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -500px;
+}
+
+.mono {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100px;
+	float: left;
+	margin-left: 5px;
+}
+
+/*S*/
+
+@keyframes s_move {
+	0% {top: 0px; left: 0px;}
+	25% {top: -20px; left:50px;}
+	50% {top: 300px; left: -300px;}
+	75% {top: 200px; left: 200px;}
+  100%{top: 0px; left: -200px;}
+}
+
+#s {
+  position: relative;
+	animation: s_move 3s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+/*C*/
+@keyframes c_move {
+	0% {top: 0px; left: 0px;}
+	25% {top: -20px; left:50px;}
+	50% {top: 200px; left: -300px;}
+	75% {top: -200px; left: 300px;}
+  100%{top: 0px; left: 60px;}
+}
+
+#c {
+  position: relative;
+	animation: c_move 3s ease-in-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+/*A*/
+@keyframes a_move {
+	0% {top: 0px; left: 0px;}
+	25% {top: -20px; left:50px;}
+	50% {top: 300px; left: -300px;}
+	75% {top: 200px; left: 50px;}
+  100%{top: 0px; left: 60px;}
+}
+
+#a {
+  position: relative;
+	animation: a_move 3s ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+/*T*/
+
+@keyframes t_move {
+	0% {top: 0px; left: 0px;}
+	25% {top: -20px; left:50px;}
+	50% {top: 100px; left: -100px;}
+	75% {top: 700px; left: 40px;}
+  100%{top: 0px; left: 60px;}
+}
+
+#t {
+  position: relative;
+	animation: t_move 3s ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+/*spin*/
+
+@keyframes rotate {
+0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}
+}
+
+#spin {
+
+  transform-origin: 50% 50%; /*this determines the origin at which it spins!! */
+  animation: rotate 5s linear;
+  animation-delay: 1s;
+}
